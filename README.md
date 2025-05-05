@@ -1,8 +1,8 @@
 
-🛍️ E-commerce Website Frontend
+# 🛍️ E-commerce Website Frontend
 This project is a static frontend for an e-commerce website, built using pure HTML and CSS. It showcases a clean, responsive layout with essential sections like the homepage, product listings, and product detail views. The design aims to provide a modern and user-friendly interface for an online shopping experience.
 
-📁 Features
+# 📁 Features
 ✅ Responsive layout for desktop and mobile devices
 
 ✅ Homepage with promotional banner and product highlights
@@ -17,7 +17,8 @@ This project is a static frontend for an e-commerce website, built using pure HT
 
 ✅ Clean and organized HTML/CSS structure
 
-🛠️ Technologies Used
+# 🛠️ Technologies Used
+
 HTML5
 
 CSS3
