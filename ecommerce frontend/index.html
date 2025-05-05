@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>EBAZAR | ECOMMERCE</title>
+    <style>
+        body {
+            background-color: #1e1e1e;
+            /* Set a dark background color */
+            color: #ffffff;
+            /* Set text color to white */
+            font-family: 'Arial', sans-serif;
+            /* Set a default font-family */
+            /* background-image: url('bg1.jpg'); */
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="LOGO.jpeg" width="110px">
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">HOME<i class='bx bxs-home'></i></a></li>
+                        <li><a href="products.html">PRODUCT</a></li>
+                        <li><a href="">ABOUT</a></li>
+                        <li><a href="">CONTACT</a></li>
+                        <li><a href="">AUCTION</a></li>
+                        <li><a href="">SELLER</a></li>
+                        <li><a href="">ACCOUNT</a></li>
+                    </ul>
+                </nav>
+                <img src="cart.png" width="30px" height="30px">
+                <img src="menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <h1>"Shop Smarter, Live Stylishly<br>Your E-Commerce Haven!"</h1>
+                    <p>"Experience the thrill of the chase on our cutting-edge e-commerce platform! <br> unbeatable deals through exhilarating auctions, where every bid is a step closer<br> to scoring exclusive products. Join the excitement at EBAZAR where shopping<br> meets heart-pounding auctions, making every purchase an adventure!" </p>
+                    <a href="" class="btn">Explore now &#8594;</a>
+                </div>
+                <div class="col-2">
+                    <!-- <img src="bg.jpg" > -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---------featured categories----------- -->
+    <div class="categories">
+        <div class="small-container">
+            <div class="row">
+                <div class="col3">
+                    <img src="ear.PNG" width="300px">
+                </div>
+                <div class="col3">
+                    <img src="watch2.PNG" width="300px">
+                </div>
+                <div class="col3">
+                    <img src="hoodi.PNG" width="300px">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---------featured products----------- -->
+    <div class="small-container">
+        <h2 class="title">Featured products</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="hood.PNG" width="300px">
+                <h4>Hoodies</h4>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$100.00</p>
+            </div>
+            <div class="col-4">
+                <img src="buds.PNG" width="300px">
+                <h4>Watch-Airbuds</h4>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$150.00</p>
+            </div>
+            <div class="col-4">
+                <img src="jacket.PNG" width="300px">
+                <h4>Jacket</h4>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$80.00</p>
+            </div>
+            <div class="col-4">
+                <img src="shirts.PNG" width="300px">
+                <h4>T shirt</h4>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$45.00</p>
+            </div>
+        </div>
+        <!-- -------------------------------latest products----------------- -->
+        <h2 class="title">Latest products</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="1.PNG" width="300px">
+                <h4>Hoodies</h4>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$100.00</p>
+            </div>
+            <div class="col-4">
+                <img src="2.PNG" width="300px">
+                <h4>Watch-Airbuds</h4>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$150.00</p>
+            </div>
+            <div class="col-4">
+                <img src="3.PNG" width="300px">
+                <h4>Jacket</h4>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$80.00</p>
+            </div>
+            <div class="col-4">
+                <img src="4.PNG" width="300px">
+                <h4>T shirt</h4>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$45.00</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <img src="5.PNG" width="300px">
+                <h4>Hoodies</h4>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$100.00</p>
+            </div>
+            <div class="col-4">
+                <img src="6.PNG" width="300px">
+                <h4>Watch-Airbuds</h4>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$150.00</p>
+            </div>
+            <div class="col-4">
+                <img src="7.PNG" width="300px">
+                <h4>Jacket</h4>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$80.00</p>
+            </div>
+            <div class="col-4">
+                <img src="8.PNG" width="300px">
+                <h4>T shirt</h4>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$45.00</p>
+            </div>
+        </div>
+    </div>
+    <!-- ---------offer products----------- -->
+    <div class="offer">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="watch.PNG" class="offer-img">
+                </div>
+                <div class="col-2">
+                    <p>Exclusive Offer</p>
+                    <h1>Rolex</h1>
+                    <small>Yet no object so hermetic, so immovable, has ever opened the door to so many possibilities. With its original patented design consisting of a bezel, a case back, and a winding crown screwed down against the middle case, it profoundly changed the course of watchmaking history and set new standards of waterproofness for all wristwatches.</small>
+                    <a href="" class="btn">Buy now &#8594;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="small-container">
+        <h2 class="title">Auction Products</h2>
+        <div class="row">
+            <div class="col-4">
+                <!-- Product 1 -->
+                <img src="bid1.jpg" width="300px" height="230px">
+                <h4>Iphones</h4>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>BID Starts From:$900.00</p>
+                <a href="" class="btn">Place BID &#8594;</a>
+            </div>
+            <div class="col-4">
+                <!-- Product 2 -->
+                <img src="bid2.jpg" width="300px">
+                <h4>Laptops</h4>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>BID Starts From:$1100.00</p>
+                <a href="" class="btn">Place BID &#8594;</a>
+            </div>
+            <div class="col-4">
+                <!-- Product 3 -->
+                <img src="bid3.jpg" width="300px">
+                <h4>Kitchen Appliances</h4>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>BID Starts From:$400.00</p>
+                <a href="" class="btn">Place BID &#8594;</a>
+            </div>
+            <div class="col-4">
+                <!-- Product 4 -->
+                <img src="bid4.jpg" width="300px" height="230px">
+                <h4>Hardware Tools</h4>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>BID Starts From:$500.00</p>
+                <a href="" class="btn">Place BID &#8594;</a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- ------------------------------------brands--------------- -->
+    <div class="brands">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-5">
+                    <!-- Brand 1 -->
+                    <img src="logo-godrej.png" alt="">
+                </div>
+                <div class="col-5">
+                    <!-- Brand 2 -->
+                    <img src="logo-oppo.png" alt="">
+                </div>
+                <div class="col-5">
+                    <!-- Brand 3 -->
+                    <img src="logo-coca-cola.png" alt="">
+                </div>
+                <div class="col-5">
+                    <!-- Brand 4 -->
+                    <img src="logo-paypal.png" alt="">
+                </div>
+                <div class="col-5">
+                    <!-- Brand 5 -->
+                    <img src="logo-philips.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- ----------------------------footer------------------- -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <!-- Footer column 1 -->
+                    <h3>Download Our App</h3>
+                    <p>Download app for android and iOS mobile phone</p>
+                    <div class="app-logo">
+                        <img src="play-store.png" >
+                        <img src="app-store.png" >
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <!-- Footer column 2 -->
+                    <img src="LOGO.jpeg" width="90px">
+                    <p>Our purpose is to sustainably make the pleasure</p>
+                </div>
+                <div class="footer-col-3">
+                    <!-- Footer column 3 -->
+                    <h3>Useful Links:</h3>
+                    <ul>
+                        <li>coupons</li>
+                        <li>blog post</li>
+                        <li>return policy</li>
+                        <li>join affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <!-- Footer column 4 -->
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                        <li>Twitter</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2023</p>
+        </div>
+    </div>
+    
+    <!-- ----------------js for togglemenu-------------- -->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+        function menutoggle(){
+            if (MenuItems.style.maxHeight === "0px") {
+                MenuItems.style.maxHeight = "200px";
+            } else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+    
+    <!-- --------------testimonial------------- -->
+    <!-- <div class="testimonial">
+        <div class="small-container">
+            <div class="row"></div>
+        </div>
+    </div> -->
+    <!-- --------------- auction products----------- -->
+   
+</body>
+</html>

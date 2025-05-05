@@ -1,0 +1,402 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #555;
+    position: relative;
+}
+
+a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #555;
+    transition: width 0.3s; /* Adding transition effect to the width */
+}
+
+a:hover::after {
+    width: 100%; /* Fully underline on hover */
+}
+
+
+p{
+    color: #555;
+}
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+
+}
+.col-2 img{
+    max-width: 100%;
+    padding: 50px 0;
+    
+}
+  
+
+.col-2 h1 {
+    
+    font-size: 30px;
+    line-height: 40px;
+    margin: 25px,0;
+}
+.col-2 p{
+    font-size: 10px;
+}
+
+.col-2 p {
+    font-size: 1.5em;
+    color: rgb(244, 240, 240);
+}
+.btn{
+  
+    display: inline-block;
+    background: #2b2727;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition:0.5s;
+
+}
+
+.btn:hover{
+    background: radial-gradient(#686161,#efe9e9);
+    
+}
+
+
+.header{
+     /* background: radial-gradient(#ece6e6,#312d2d);  */
+     background: linear-gradient(-45deg, #151515, #0a0a0a, #32055f, #23d5ab);
+     background-size: 200% 200%;
+     animation: gradient 15s ease infinite;
+ }
+ 
+ @keyframes gradient {
+     0% {
+         background-position: 0% 50%;
+     }
+     50% {
+         background-position: 100% 50%;
+     }
+     100% {
+         background-position: 0% 50%;
+     }
+    
+}
+.header .row{
+margin-top: 70px;
+}
+.categories{
+    margin-top: 70px 0;
+}
+.col-3{
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+.col-3 img{
+    width: 100%;
+    
+    /* border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px; */
+    
+}
+
+
+.small-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.col-4{
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+
+}
+.col-4 img{
+    width: 100%;
+}
+.title{
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+}
+.title::after{
+    content: '';
+    background: #ff523f;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.h4{
+    color: #555;
+    font-weight: normal;
+
+}
+.col-4 p{
+    font-size: 14px;
+
+}
+.rating .fa{
+    color: #ff523b;
+}
+.col-4:hover{
+    transform: translateY(-5px);
+    /* border: 2px solid #0b0b0b;  */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+}
+/* -----------offer--------------- */
+.offer{
+    /* background: radial-gradient(#ece6e6,#312d2d);   */
+    background-image: url('hi.jpg');
+    margin-top: 80px;  
+    padding: 30px 0;
+}
+.col-2 .offer-img{
+    padding: 50px;
+    width: 500px; /* Set the width of the image */
+    height: 500px; /* Set the height of the image */
+    border-radius: 50%; /* Turn the square image into a circle */
+    overflow: hidden; 
+}
+small{
+    color: #555;
+}
+/* --------------------brands--------------- */
+.brands{
+    margin: 100px auto;
+}
+.col-5{
+    width: 160px;
+}
+.col-5 img{
+    width: 100%;
+    cursor: pointer;
+    filter: grayscale(100%);
+
+}
+.col-5 img:hover{
+    filter: grayscale(0);
+}
+/* -------------------------footer------------------------- */
+.footer{
+    background:black;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 60px 0 20px;
+    left: 0;
+}
+.footer p{
+    color: #0a0a0a;
+}
+.footer h3{
+    color: #fff;
+    margin-bottom: 20px;
+}
+.footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4{
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+.footer-col-1{
+    flex-basis: 30%;
+
+}
+.footer-col-2{
+    flex: 1;
+    text-align: center;
+}
+.footer-col-2 img{
+    width: 180px;
+    margin-bottom: 20px;
+}
+.footer-col-3, .footer-col-4{
+    flex-basis: 12%;
+    text-align: center;
+
+}
+ul{
+    list-style-type: none;
+}
+.app-logo{
+    margin-top: 20px;
+
+}
+.app-logo img{
+    width: 140px;
+}
+.footer hr{
+    border: none;
+    background: #b5b5b5;
+    height: 1px;
+    margin: 20px 0;
+}
+.copyright{
+    text-align: center;
+}
+.menu-icon{
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+
+}
+/* ----------------------mediaqeury--------------- */
+@media only screen and (max-width : 800px){
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: #333;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+
+    }
+    nav ul li{
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+    }
+    nav ul li a{
+        color: #fff;
+
+    }
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+}
+/* --------------------------all products page------------------ */
+.row-2{
+    justify-content: space-between;
+    margin: 100px auto 50px;
+}
+/* select{
+    border: 1px solid #ff523b;
+    padding: 5px;
+}
+select:focus{
+    outline: none;
+}
+.page-btn{
+    margin: 0 auto 80px;
+
+} */
+
+
+/* Preserve existing styles for select */
+select {
+    border: 1px solid #ff523b;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: border-color 0.3s ease;
+}
+
+select:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+/* Preserve existing styles for .page-btn */
+.page-btn {
+    margin: 0 auto 80px;
+    display: inline-block;
+    padding: 10px 20px;
+
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+
+
+
+
+.page-btn span{
+    display: inline-block;
+    border: 1px solid #ff523b;
+    margin-left: 10px;
+    width: 40px;
+    height:40px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+.page-btn span:hover{
+    background: #ff523b;
+    color: #fff;
+
+}
+
+
+
+
+/* ----------------------mediaqeury less 600--------------- */
+@media only screen and (max-width : 600px){
+    .row{
+        text-align: center;
+    }
+    .col-2, .col-3, .col-4{
+        flex-basis: 100%;
+    }
+
+}
